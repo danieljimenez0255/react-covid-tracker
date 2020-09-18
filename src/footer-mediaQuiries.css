@@ -1,0 +1,116 @@
+/* main footer media quiries for the links and the position of the sections of the footer */
+
+@media only screen and (max-width: 1300px) {
+  .footer__containerLinks {
+    flex-direction: column;
+  }
+
+  .footer__containerM div:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 638px) {
+  .footer__socialHelpIconsMain,
+  .footer__socialMediaIconsMain {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 931px) and (min-width: 701px) {
+  .footerM {
+    margin: 50px 40px 0 40px;
+  }
+  .footer__containerLinksSectionsOne a,
+  .footer__containerLinksSectionsTwo a,
+  .footer__pageSectionLinksOne a,
+  .footer__pageSectionLinksTwo a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 500px) {
+  .footerM {
+    margin: 50px 40px 0 40px;
+  }
+  .footer__containerLinksSectionsOne a,
+  .footer__containerLinksSectionsTwo a,
+  .footer__pageSectionLinksOne a,
+  .footer__pageSectionLinksTwo a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 932px) {
+  .footerM {
+    margin: 50px 80px 0 80px;
+  }
+  .footer__containerLinksSectionsOne a,
+  .footer__containerLinksSectionsTwo a,
+  .footer__pageSectionLinksOne a,
+  .footer__pageSectionLinksTwo a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 1150px) and (min-width: 1100px) {
+  .footerM {
+    margin: 50px 120px 0 120px;
+  }
+  .footer__containerLinksSectionsOne a,
+  .footer__containerLinksSectionsTwo a,
+  .footer__pageSectionLinksOne a,
+  .footer__pageSectionLinksTwo a {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 1250px) and (min-width: 1151px) {
+  .footerM {
+    margin: 50px 160px 0 160px;
+  }
+  .footer__containerLinksSectionsOne a,
+  .footer__containerLinksSectionsTwo a,
+  .footer__pageSectionLinksOne a,
+  .footer__pageSectionLinksTwo a {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 1300px) and (min-width: 1251px) {
+  .footerM {
+    margin: 50px 190px 0 190px;
+  }
+  .footer__containerLinksSectionsOne a,
+  .footer__containerLinksSectionsTwo a,
+  .footer__pageSectionLinksOne a,
+  .footer__pageSectionLinksTwo a {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1350px) and (min-width: 1301px) {
+  .footer__containerLinksSectionsOne a,
+  .footer__containerLinksSectionsTwo a,
+  .footer__pageSectionLinksOne a,
+  .footer__pageSectionLinksTwo a {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (max-width: 1400px) and (min-width: 1351px) {
+  .footer__containerLinksSectionsOne a,
+  .footer__containerLinksSectionsTwo a,
+  .footer__pageSectionLinksOne a,
+  .footer__pageSectionLinksTwo a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 300px) {
+  .footer__containerLinksSectionsOne a,
+  .footer__containerLinksSectionsTwo a,
+  .footer__pageSectionLinksOne a,
+  .footer__pageSectionLinksTwo a {
+    text-align: center;
+  }
+}

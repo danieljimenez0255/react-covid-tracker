@@ -1,0 +1,191 @@
+.footerM {
+  margin: 50px 50px 0 50px;
+
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.footer__containerM {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+
+.footer__containerDesc {
+  /* border: 1px solid blue; */
+
+  margin-top: 20px;
+}
+
+.footer__containerDesc h1 {
+  padding-left: 15px;
+}
+
+.footer__containerDesc p {
+  padding: 15px;
+}
+
+.footer__containerLinks {
+  display: flex;
+  width: 100%;
+
+  /* border: 1px solid green; */
+  margin-top: 4px;
+}
+
+.footer__containerLinksSections {
+  flex-basis: 40%;
+  height: 100%;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+.footer__containerLinksSectionsContainer,
+.footer__pageSectionLinks {
+  display: flex;
+}
+
+.footer__containerLinksSectionsContainer,
+.footer__pageSectionLinks,
+.footer__socialsHelpSection {
+  width: 100%;
+  /* border: 1px solid purple; */
+  height: 29.5vh;
+}
+
+.footer__socialsHelpSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__containerLinksSectionsOne,
+.footer__containerLinksSectionsTwo,
+.footer__pageSectionLinksOne,
+.footer__pageSectionLinksTwo {
+  flex-basis: 50%;
+  height: 100%;
+  /* border: 1px solid orange; */
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  /* justify-content: space-around; */
+}
+
+.footer__containerLinksSectionsOne a,
+.footer__containerLinksSectionsTwo a,
+.footer__pageSectionLinksOne a,
+.footer__pageSectionLinksTwo a {
+  text-decoration: none;
+  color: red;
+  font-size: 0.9rem;
+}
+
+.footer__containerLinksSectionsOne a:first-child,
+.footer__containerLinksSectionsTwo a:first-child,
+.footer__pageSectionLinksOne a:first-child,
+.footer__pageSectionLinksTwo a:first-child {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer__containerLinksSectionsOne a:not(:first-child),
+.footer__containerLinksSectionsTwo a:not(:first-child),
+.footer__pageSectionLinksOne a:not(:first-child),
+.footer__pageSectionLinksTwo a:not(:first-child) {
+  margin: 10px 0;
+}
+
+.footer__socialsHelpSectionIcons,
+.footer__socialsMediaIcons {
+  height: 50%;
+  /* border: 1px solid turquoise; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10px;
+}
+
+.footer__socialHelpIconsMain,
+.footer__socialMediaIconsMain {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 2px;
+}
+
+.footer__socialHelpIconsMainC {
+  height: 55px;
+  width: 55px;
+  border: 1px solid red;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__socialMediaIconsMainC {
+  height: 55px;
+  width: 55px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.who__logo img {
+  object-fit: contain;
+  width: 50px;
+}
+
+.cross__logo img {
+  object-fit: contain;
+  width: 40px;
+}
+
+.footer__socialMediaIconsMainC img {
+  object-fit: contain;
+  width: 55px;
+}
+
+/* all icons animations */
+.footer__socialHelpIconsMainC,
+.footer__socialMediaIconsMainC {
+  position: relative;
+}
+.footer__socialHelpIconsMainC:hover,
+.footer__socialMediaIconsMainC:hover {
+  animation-name: upDown;
+  animation-duration: 0.1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  -webkit-box-shadow: -1px 10px 5px -2px rgba(25, 25, 112, 0.82);
+  -moz-box-shadow: -1px 10px 5px -2px rgba(25, 25, 112, 0.82);
+  box-shadow: -1px 10px 5px -2px rgba(25, 25, 112, 0.82);
+}
+
+@keyframes upDown {
+  from {
+    bottom: 0;
+  }
+  to {
+    bottom: 5px;
+  }
+}
+.toolTip-sty {
+  background-color: red !important;
+}
+.toolTip-styT::before {
+  background-color: red !important;
+}

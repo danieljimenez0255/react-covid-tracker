@@ -8,11 +8,19 @@
 }
 
 .infoBox--selected {
-  border-top: 10px solid greenyellow;
+  border-top: 10px solid;
 }
 
 .infoBox--isRed {
   border-color: red;
+}
+
+.infoBox--isGreen {
+  border-color: greenyellow;
+}
+
+.infoBox--isBlue {
+  border-color: #87cefa;
 }
 
 .infoBox__cases {
@@ -26,9 +34,23 @@
   color: lightgreen !important;
 }
 
+.infoBox__cases--blue {
+  color: #87cefa !important;
+}
+
 .infoBox__total {
   color: #6c757d !important;
   font-weight: 700 !important;
   font-size: 0.8rem !important;
   margin-top: 15px !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .app__firstSectionStats {
+    flex-direction: column;
+  }
+
+  .app__firstSectionStats div:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }

@@ -7,54 +7,237 @@ body {
   background-color: #f5f6fa;
 }
 
-.app {
+.app__container {
+  display: flex;
+  flex-flow: column;
+  min-height: 300vh;
+}
+
+.app__container {
+  margin-bottom: 40px;
+}
+
+.app__firstSection {
   display: flex;
   justify-content: space-evenly;
   padding: 20px;
 }
 
-.app__dropdown {
+.app__firstSectionDropDown {
   background-color: white;
 }
 
-.app__left {
+.app__firstSectionLeft {
   flex: 0.9;
 }
 
-.app__header {
+.app__firstSectionHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.app__stats {
+.app__firstSectionStats {
   display: flex;
   justify-content: space-between;
 }
 
-.app__right {
+.app__firstSectionRight {
   display: flex;
   flex-direction: column;
 }
 
-.app__right .MuiCardContent-root {
+.app__firstSectionRight .MuiCardContent-root {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
 }
 
-.app__graph {
+.app__firstSectionGraph {
   flex-grow: 1;
 }
 
-.app__graphTitle {
+.app__firstSectionGraphTitle {
   padding: 10px;
   text-align: center;
 }
 
+.app__secondSection {
+  align-self: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 92vw;
+  height: 500px;
+  overflow-y: scroll !important;
+  background-color: white !important;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  -ms-border-radius: 20px !important;
+  -o-border-radius: 20px !important;
+}
+
+.app__secondSection::-webkit-scrollbar {
+  display: none;
+}
+
+.app__secondSectionGraph {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.app__secondSectionGraphLine {
+  position: relative;
+  height: 330px;
+  width: 400px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.app__thirdSection {
+  margin-top: 60px;
+  align-self: center;
+  display: flex;
+  width: 92vw;
+  height: 500px;
+  background-color: white !important;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 20px !important;
+  -webkit-border-radius: 20px !important;
+  -moz-border-radius: 20px !important;
+  -ms-border-radius: 20px !important;
+  -o-border-radius: 20px !important;
+}
+
 @media only screen and (max-width: 990px) {
-  .app {
-    flex-direction: column;
+  .app__firstSection {
+    flex-direction: column !important;
+  }
+  .app__secondSection {
+    height: 1800px;
+  }
+  .app__thirdSection {
+    height: 920px;
+  }
+}
+
+@media only screen and (max-width: 1108px) and (min-width: 990px) {
+  .app__firstSectionRight {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 1305px) and (min-width: 1163px) {
+  .app__secondSection {
+    height: 350px;
+  }
+  .app__secondSectionGraph {
+    width: 350px;
+    height: 350px;
+  }
+  .app__secondSectionGraphLine {
+    height: 260px;
+    width: 370px;
+  }
+}
+
+@media only screen and (max-width: 1163px) and (min-width: 1064px) {
+  .app__secondSection {
+    height: 430px;
+  }
+  .app__secondSectionGraph {
+    width: 320px;
+    height: 320px;
+  }
+  .app__secondSectionGraphLine {
+    height: 220px;
+    width: 340px;
+  }
+}
+
+@media only screen and (max-width: 1064px) and (min-width: 977px) {
+  .app__secondSection {
+    height: 410px;
+  }
+  .app__secondSectionGraph {
+    width: 290px;
+    height: 290px;
+  }
+  .app__secondSectionGraphLine {
+    height: 200px;
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 559px) {
+  .app__secondSection {
+    height: 410px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: 240vh;
+  }
+
+  .app__secondSectionGraph {
+    width: 290px;
+    height: 290px;
+  }
+  .app__secondSectionGraphLine {
+    height: 200px;
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 716px) and (min-width: 559px) {
+  .app__secondSection {
+    height: 410px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: 240vh;
+  }
+
+  .app__secondSectionGraph {
+    width: 340px;
+    height: 340px;
+  }
+  .app__secondSectionGraphLine {
+    height: 240px;
+    width: 360px;
+  }
+}
+@media only screen and (max-width: 984px) and (min-width: 716px) {
+  .app__secondSection {
+    height: 410px;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60vw;
+    height: 240vh;
+  }
+
+  .app__secondSectionGraph {
+    width: 360px;
+    height: 360px;
+  }
+  .app__secondSectionGraphLine {
+    height: 260px;
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .app__secondSection {
+    height: 150vh;
   }
 }
