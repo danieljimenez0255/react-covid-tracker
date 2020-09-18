@@ -4,12 +4,12 @@ import { Card, CardContent, Typography } from "@material-ui/core";
 
 // ...props means any other props that come through
 // -- in class names means something is being modified
-function InfoBox({ title, cases, isRed, active, total, ...props }) {
+function InfoBox({ title, cases, active, total, ...props }) {
   return (
     <Card
-      className={`infoBox ${active && "infoBox--selected"} ${
-        isRed && "infoBox--isRed"
-      }`}
+      className={`infoBox ${
+        active && "infoBox--selected"
+      } ${`infoBox--${props.isColor}`}`}
       onClick={props.onClick}
     >
       <CardContent>
@@ -18,7 +18,9 @@ function InfoBox({ title, cases, isRed, active, total, ...props }) {
           {title}
         </Typography>
         {/* Stats(change) */}
-        <h2 className={`infoBox__cases ${!isRed && "infoBox__cases--green"}`}>
+        <h2
+          className={`infoBox__cases ${`infoBox__cases--${props.cardTextColor}`}`}
+        >
           {cases}
         </h2>
         {/* Stats(Total) */}
